@@ -10,8 +10,8 @@
         <TabControl Canvas.Top="0" Width="516" Height="350">
             <TabItem Header="To Do">
                 <Grid Background="#030341" TextElement.Foreground="#f1f1f8">
-                <StackPanel>
-                    <TextBlock Margin="10" FontSize="20">To Dos:</TextBlock>
+                    <StackPanel>
+                        <TextBlock Margin="10" FontSize="20">To Dos:</TextBlock>
                         <CheckBox Margin="20, 2, 10, 2" Foreground="#f1f1f8">SE-4220 HW-02</CheckBox>
                         <CheckBox Margin="20, 2, 10, 2" Foreground="#f1f1f8">SE-4220 HW-03</CheckBox>
                         <CheckBox Margin="20, 2, 10, 2" Foreground="#f1f1f8">Read WPF 4.5 Chapter 4</CheckBox>
