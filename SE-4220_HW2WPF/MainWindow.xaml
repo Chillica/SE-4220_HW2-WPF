@@ -1,0 +1,35 @@
+﻿<Window x:Class="SE_4220_HW2WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SE_4220_HW2WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Canvas>
+        <TabControl Canvas.Top="0" Width="516" Height="350">
+            <TabItem Header="To Do">
+                <Grid Background="#030341" TextElement.Foreground="#f1f1f8">
+                <StackPanel>
+                    <TextBlock Margin="10" FontSize="20">To Dos:</TextBlock>
+                        <CheckBox Margin="20, 2, 10, 2" Foreground="#f1f1f8">SE-4220 HW-02</CheckBox>
+                        <CheckBox Margin="20, 2, 10, 2" Foreground="#f1f1f8">SE-4220 HW-03</CheckBox>
+                        <CheckBox Margin="20, 2, 10, 2" Foreground="#f1f1f8">Read WPF 4.5 Chapter 4</CheckBox>
+                        <CheckBox Margin="20, 2, 10, 2" Foreground="#f1f1f8">Read WPF 4.5 Chapter 5</CheckBox>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Groceries">
+                <Grid Background="Black" TextElement.Foreground="#f1f1f8">
+                    <StackPanel>
+                        <TextBlock Margin="10" FontSize="20">Grocery List:</TextBlock>
+                        <CheckBox Margin="20, 2, 10, 2" Foreground="#f1f1f8">Apples</CheckBox>
+                        <CheckBox Margin="20, 2, 10, 2" Foreground="#f1f1f8">Socks</CheckBox>
+                        <CheckBox Margin="20, 2, 10, 2" Foreground="#f1f1f8">Soap</CheckBox>
+                        <CheckBox Margin="20, 2, 10, 2" Foreground="#f1f1f8">Butter</CheckBox>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Canvas>
+</Window>
