@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:SE_4220_HW2WPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Canvas>
-        <TabControl Canvas.Top="0" MinWidth="516" MinHeight="320">
+    <Grid>
+        <TabControl MinWidth="516" MinHeight="320">
             <TabItem Header="To Do">
                 <Grid Background="#030341" TextElement.Foreground="#f1f1f8">
                     <StackPanel>
@@ -20,7 +20,7 @@
                 </Grid>
             </TabItem>
             <TabItem Header="Groceries">
-                <Grid Background="Black" TextElement.Foreground="#f1f1f8">
+                <Canvas Background="Black" TextElement.Foreground="#f1f1f8">
                     <StackPanel>
                         <TextBlock Margin="10" FontSize="20">Grocery List:</TextBlock>
                         <CheckBox Margin="20, 2, 10, 2" Foreground="#f1f1f8">Apples</CheckBox>
@@ -28,8 +28,12 @@
                         <CheckBox Margin="20, 2, 10, 2" Foreground="#f1f1f8">Soap</CheckBox>
                         <CheckBox Margin="20, 2, 10, 2" Foreground="#f1f1f8">Butter</CheckBox>
                     </StackPanel>
-                </Grid>
+                    <TextBlock Canvas.Top="50"
+                               Canvas.Right="40">Smile Everyone This is on the right side.</TextBlock>
+                    <Button Canvas.Bottom="20"
+                            Canvas.Left="230">Bottom Button</Button>
+                </Canvas>
             </TabItem>
         </TabControl>
-    </Canvas>
+    </Grid>
 </Window>
